@@ -10,14 +10,14 @@ function App() {
         <h3 data-testid="counter">{count}</h3>
         <button
           data-testId="minus-button"
-          onClick={(prev) => setCount(prev - 1)}
+          onClick={() => setCount(count - 1)}
           disabled={disabled}
         >
           -
         </button>
         <button
           data-testId="plus-button"
-          onClick={(prev) => setCount(prev + 1)}
+          onClick={() => setCount(count + 1)}
           disabled={disabled}
         >
           +
